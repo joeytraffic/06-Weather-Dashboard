@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
     <header class="header">
@@ -17,15 +18,17 @@
     <main class="main">
         <aside class="search">
             <h2>Search for a City:</h2>
-            <input type="search" />
+            <input id="search-input" class="search-input" type="text" placeholder="San Diego">
+            <button class="btn">Search</button>
+            
         </aside>
 
         <section class="results">
             <div class="city-container">
                 <h2 class="city">CITY</h2>
-                <div class="weather-main" id="temp-main"></div>
-                <div class="weather-main" id="wind-main"></div>
-                <div class="weather-main" id="humidity-main"></div>
+                <div class="weather-main" id="temp-main">Temp: </div>
+                <div class="weather-main" id="wind-main">Wind: </div>
+                <div class="weather-main" id="humidity-main">Humidity: </div>
             </div>
 
             <h2 class="forecast">5-Day Forecast:</h2>
@@ -33,7 +36,7 @@
             <div class="forecast-container">
                 
                 <div class="day-card" id="day1">
-                    <h3 class="date" id="date1">date</h3>
+                    <h3 class="date" id="date1"></h3>
                     <div class="weather-card" id="temp1">Temp: </div>
                     <div class="weather-card" id="wind1">Wind: </div>
                     <div class="weather-card" id="humidity1">Humidity: </div>
@@ -70,6 +73,6 @@
             </div>
         </section>
     </main>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
