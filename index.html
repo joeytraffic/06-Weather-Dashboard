@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="assets/css/style.css" />
+    
     <title>Weather Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <header class="header">
@@ -19,7 +21,7 @@
         <aside class="search">
             <h2>Search for a City:</h2>
             <input id="search-input" class="search-input" type="text" placeholder="San Diego">
-            <button class="btn">Search</button>
+            <input type="submit" value="search" class="btn" id="search-button">
             
         </aside>
 
@@ -73,6 +75,6 @@
             </div>
         </section>
     </main>
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
